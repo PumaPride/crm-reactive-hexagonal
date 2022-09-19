@@ -1,0 +1,15 @@
+spring:
+  # profiles: dev
+  config:
+    activate:
+      on-profile: dev
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/crmtestdb
+    username: postgres
+    password: postgres
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: Debug
